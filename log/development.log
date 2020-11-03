@@ -1,4 +1,4 @@
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:06:40 +0530
+Started GET "/" for ::1 at 2020-11-03 20:15:18 +0530
   
 ActiveRecord::PendingMigrationError (
 
@@ -8,456 +8,101 @@ Migrations are pending. To resolve this issue, run:
 
 ):
   
-activerecord (5.2.1) lib/active_record/migration.rb:579:in `check_pending!'
-activerecord (5.2.1) lib/active_record/migration.rb:556:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
-activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
-actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+activerecord (5.2.4.4) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.4.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/bin/rake:23
-  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/bin/rake:23
-  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/bin/rake:23
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
 Migrating to CreateArticles (20180927093235)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  ↳ bin/rails:9
   [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "articles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
   ↳ db/migrate/20180927093235_create_articles.rb:3
-  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180927093235"]]
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/bin/rake:23
-  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/bin/rake:23
-  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/bin/rake:23
-  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/bin/rake:23
-  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-11-03 11:37:17.388032"], ["updated_at", "2020-11-03 11:37:17.388032"]]
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180927093235"]]
+  ↳ bin/rails:9
   [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/bin/rake:23
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/bin/rake:23
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/bin/rake:23
-  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
-  ↳ db/seeds.rb:9
-  [1m[36mArticle Create (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "blockchain is the future"], ["text", "Cryptocurrencies of all types make use of distributed ledger technology known as blockchain. Blockchains act as decentralized systems for recording and documenting transactions that take place involving a particular digital currency. Put simply, blockchain is a transaction ledger that maintains identical copies across each member computer within a network. Any party is able to both review previous entries and record new ones, although most blockchain networks have complex rules for the addition of new groups of records, \"blocks,\" to the chain of previous records. The blocks and the contents within them are protected by powerful cryptography, which insures that previous transactions within the network cannot be either forged or destroyed. In this way, blockchain technology allows a digital currency to maintain a trusted transaction network without relying on a central authority. It is for this reason that digital currencies are thought of as \"decentralized.\""], ["created_at", "2020-11-03 11:37:19.517035"], ["updated_at", "2020-11-03 11:37:19.517035"]]
-  ↳ db/seeds.rb:9
-  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
-  ↳ db/seeds.rb:9
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:07:29 +0530
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (4.7ms)
-Completed 200 OK in 4242ms (Views: 4230.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:07:34 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 31ms (Views: 23.1ms | ActiveRecord: 2.1ms)
-
-
-Started POST "/api/v1/articles" for 127.0.0.1 at 2020-11-03 17:08:09 +0530
-Processing by Api::V1::ArticlesController#create as */*
-  Parameters: {"article"=>{"title"=>"aas", "text"=>"aasas"}}
-Can't verify CSRF token authenticity.
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:7
-  [1m[36mArticle Create (1.9ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "aas"], ["text", "aasas"], ["created_at", "2020-11-03 11:38:09.818070"], ["updated_at", "2020-11-03 11:38:09.818070"]]
-  ↳ app/controllers/api/v1/articles_controller.rb:7
-  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:7
-Completed 200 OK in 16ms (Views: 0.6ms | ActiveRecord: 8.3ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:08:45 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 1071ms (Views: 1064.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:08:47 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 24ms (Views: 15.5ms | ActiveRecord: 2.3ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:11:39 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (3.8ms)
-Completed 200 OK in 1016ms (Views: 1006.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:11:41 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 24ms (Views: 16.4ms | ActiveRecord: 1.5ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:17:44 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (1.7ms)
-Completed 200 OK in 1215ms (Views: 1197.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:17:46 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 40ms (Views: 24.4ms | ActiveRecord: 4.1ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:19:12 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (6.8ms)
-Completed 200 OK in 332ms (Views: 319.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:19:13 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.6ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:21:26 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (4.3ms)
-Completed 200 OK in 320ms (Views: 289.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:21:27 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:21:39 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (1.3ms)
-Completed 200 OK in 194ms (Views: 190.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:21:40 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.4ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:21:59 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (1.6ms)
-Completed 200 OK in 103ms (Views: 96.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:21:59 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.2ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:23:51 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (2.1ms)
-Completed 200 OK in 1360ms (Views: 1351.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:23:53 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 51ms (Views: 33.5ms | ActiveRecord: 3.9ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:24:58 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (10.7ms)
-Completed 200 OK in 223ms (Views: 211.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:24:59 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 1.1ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:25:31 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (1.3ms)
-Completed 200 OK in 104ms (Views: 98.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:25:31 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:27:12 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (0.8ms)
-Completed 500 Internal Server Error in 981ms (ActiveRecord: 0.0ms)
-
-
-  
-ActionView::Template::Error (SyntaxError: unknown: Unexpected token (11:6)
-   9 |         e.preventDefault();
-  10 |       }}
-> 11 |       <input ref={input => (formFields.title = input)} placeholder="Enter the title"/>
-     |       ^
-  12 |       <input ref={input => (formFields.text = input)} placeholder="Enter the text"/>
-  13 |       <button>Submit</button>
-  14 |     </form>):
-     6:     <%= csp_meta_tag %>
-     7: 
-     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    10:   </head>
-    11: 
-    12:   <body>
-  
-app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___3185996425627172814_70177752994260'
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:27:34 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (0.5ms)
-Completed 200 OK in 1633ms (Views: 1626.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:27:36 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 64ms (Views: 52.5ms | ActiveRecord: 3.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:28:56 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (5.0ms)
-Completed 200 OK in 181ms (Views: 168.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:28:57 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.7ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:29:11 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (0.7ms)
-Completed 200 OK in 175ms (Views: 169.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:29:11 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (3.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 11ms (Views: 6.1ms | ActiveRecord: 3.6ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 17:29:38 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (1.0ms)
-Completed 200 OK in 107ms (Views: 102.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 17:29:39 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (12.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 18ms (Views: 2.7ms | ActiveRecord: 12.7ms)
-
-
-Started POST "/api/v1/articles" for 127.0.0.1 at 2020-11-03 17:30:16 +0530
-Processing by Api::V1::ArticlesController#create as */*
-  Parameters: {"article"=>{"title"=>"ahghaghasg", "text"=>"sasasasasa"}}
-Can't verify CSRF token authenticity.
-  [1m[35m (0.9ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:7
-  [1m[36mArticle Create (4.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ahghaghasg"], ["text", "sasasasasa"], ["created_at", "2020-11-03 12:00:16.287448"], ["updated_at", "2020-11-03 12:00:16.287448"]]
-  ↳ app/controllers/api/v1/articles_controller.rb:7
-  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:7
-Completed 200 OK in 32ms (Views: 2.6ms | ActiveRecord: 6.8ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 18:17:25 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (10.7ms)
-Completed 200 OK in 1233ms (Views: 1211.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 18:18:21 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (0.8ms)
-Completed 200 OK in 1104ms (Views: 1099.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 18:18:38 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (0.9ms)
-Completed 500 Internal Server Error in 933ms (ActiveRecord: 0.0ms)
-
-
-  
-ActionView::Template::Error (SyntaxError: unknown: JSX value should be either an expression or a quoted JSX text (3:19)
-  1 | const Main = props => {
-  2 |   return (
-> 3 |     <div className=main style={main}>
-    |                    ^
-  4 |       <center>
-  5 |         <h1>React RoR Blog</h1>
-  6 |       </center>):
-     6:     <%= csp_meta_tag %>
-     7: 
-     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    10:   </head>
-    11: 
-    12:   <body>
-  
-app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___3185996425627172814_70177729631440'
-Started GET "/" for 127.0.0.1 at 2020-11-03 18:19:30 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (1.6ms)
-Completed 200 OK in 1213ms (Views: 1200.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 18:19:32 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 59ms (Views: 47.4ms | ActiveRecord: 5.7ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 18:21:29 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (2.3ms)
-Completed 200 OK in 1396ms (Views: 1384.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 18:21:31 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 49ms (Views: 33.4ms | ActiveRecord: 5.2ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 18:22:14 +0530
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (0.8ms)
-Completed 200 OK in 1247ms (Views: 1243.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 18:22:15 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 31ms (Views: 22.0ms | ActiveRecord: 5.6ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-11-03 19:44:19 +0530
-  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /Users/alekhya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (2.5ms)
-Completed 200 OK in 908ms (Views: 877.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/api/v1/articles.json" for 127.0.0.1 at 2020-11-03 19:44:21 +0530
-Processing by Api::V1::ArticlesController#index as JSON
-  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  ↳ app/controllers/api/v1/articles_controller.rb:3
-Completed 200 OK in 79ms (Views: 68.3ms | ActiveRecord: 2.7ms)
-
-
-Started GET "/" for ::1 at 2020-11-03 19:45:44 +0530
-  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-11-03 14:45:40.608014"], ["updated_at", "2020-11-03 14:45:40.608014"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mArticle Create (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "blockchain is the future"], ["text", "Cryptocurrencies of all types make use of distributed ledger technology known as blockchain. Blockchains act as decentralized systems for recording and documenting transactions that take place involving a particular digital currency. Put simply, blockchain is a transaction ledger that maintains identical copies across each member computer within a network. Any party is able to both review previous entries and record new ones, although most blockchain networks have complex rules for the addition of new groups of records, \"blocks,\" to the chain of previous records. The blocks and the contents within them are protected by powerful cryptography, which insures that previous transactions within the network cannot be either forged or destroyed. In this way, blockchain technology allows a digital currency to maintain a trusted transaction network without relying on a central authority. It is for this reason that digital currencies are thought of as \"decentralized.\""], ["created_at", "2020-11-03 14:45:43.248386"], ["updated_at", "2020-11-03 14:45:43.248386"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+Started GET "/" for ::1 at 2020-11-03 20:16:00 +0530
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/alekhya/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 279)
-Completed 200 OK in 2657ms (Views: 2639.4ms | ActiveRecord: 0.0ms | Allocations: 111827)
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6763ms (Views: 6748.5ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for ::1 at 2020-11-03 19:51:41 +0530
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/api/v1/articles.json" for ::1 at 2020-11-03 20:16:07 +0530
+Processing by Api::V1::ArticlesController#index as JSON
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/api/v1/articles_controller.rb:3
+Completed 200 OK in 22ms (Views: 14.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2020-11-03 20:17:07 +0530
 Processing by HomeController#index as HTML
   Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 67)
-Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 7375)
+  Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 3081ms (Views: 3072.2ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for ::1 at 2020-11-03 19:52:52 +0530
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-Processing by HomeController#index as HTML
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
-Completed 200 OK in 684ms (Views: 682.8ms | ActiveRecord: 0.0ms | Allocations: 70842)
+Started GET "/api/v1/articles.json" for ::1 at 2020-11-03 20:17:11 +0530
+Processing by Api::V1::ArticlesController#index as JSON
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/api/v1/articles_controller.rb:3
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 1.0ms)
 
 
